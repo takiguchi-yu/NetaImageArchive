@@ -18,7 +18,7 @@ jobs:
       - name: Build to Static file Export
         run: |
           cd frontend
-          npm ci && npm run build && npm run export
+          npm ci && npm run export
 
       - name: Firebase Hosting Deploy
         uses: FirebaseExtended/action-hosting-deploy@v0
