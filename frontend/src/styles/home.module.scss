@@ -1,0 +1,76 @@
+.heading {
+  text-align: center;
+  padding-bottom: 2rem;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 4rem;
+
+  span {
+    color: $main-color;
+    text-transform: uppercase;
+  }
+}
+
+.gallery .boxContainer {
+  @include grid(32rem);
+
+  .box {
+    position: relative;
+    border: .2rem solid $white;
+    border-radius: .5rem;
+    height: 24rem;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover {
+      border: .2rem solid $main-color;
+    }
+
+    .overlay {
+      position: absolute;
+      left: 0;
+      bottom: -2.4rem;
+      opacity: 0;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      align-items: center;
+      width: 100%;
+      gap: 0.5rem;
+      background: linear-gradient(0deg, rgba(255, 255, 255,.6), transparent);
+
+      .title {
+        display: flex;
+        flex: initial;
+        align-items: center;
+
+        h3 {
+          font-size: 1.6rem;
+          text-shadow: .1rem .1rem 0 #FFF, -.1rem -.1rem 0 #FFF,
+                      -.1rem .1rem 0 #FFF, .1rem -.1rem 0 #FFF,
+                      0px .1rem 0 #FFF,  0-.1rem 0 #FFF,
+                      -.1rem 0 0 #FFF, .1rem 0 0 #FFF;
+        }
+      }
+
+      .keywords {
+        flex: auto;
+
+        a {
+          padding: .2rem .4rem;
+          color: $black;
+          font-size: 1.6rem;
+
+          &:hover {
+            color: $main-color;
+          }
+        }
+      }
+    }
+
+    &:hover .overlay {
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+}

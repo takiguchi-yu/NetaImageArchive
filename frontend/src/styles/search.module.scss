@@ -1,0 +1,63 @@
+.search {
+
+  .searchForm {
+    height: 5rem;
+    width: 100%;
+    border: .1rem solid $white;
+    border-radius: 1rem;
+    margin: 1rem auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    input {
+      height: 100%;
+      width: 100%;
+      font-size: 2rem;
+      padding: 0 1.2rem;
+      text-transform: none;
+    }
+
+    label {
+      font-size: 2.2rem;
+      padding: 1.7rem;
+      cursor: pointer;
+      color: $white;
+
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+
+  .tags {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1.6rem;
+
+    .tag {
+      border-radius: 5rem;
+      background: $main-color;
+      padding: .8rem 1.6rem;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+
+  .tagContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 1.6rem;
+
+    .tag {
+      border-radius: 5rem;
+      background: $main-color;
+      padding: .8rem 1.6rem;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+}
