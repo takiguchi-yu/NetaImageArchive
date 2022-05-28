@@ -30,34 +30,24 @@
     }
   }
 
-  .tags {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    font-size: 1.6rem;
-
-    .tag {
-      border-radius: 5rem;
-      background: $main-color;
-      padding: .8rem 1.6rem;
-      align-items: center;
-      cursor: pointer;
-    }
-  }
-
-  .tagContainer {
+  .keywordContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
     font-size: 1.6rem;
 
-    .tag {
+    .keyword {
       border-radius: 5rem;
       background: $main-color;
       padding: .8rem 1.6rem;
       align-items: center;
       cursor: pointer;
+
+      &:hover {
+        background: $secondary-color;
+        color: $white;
+      }
     }
   }
 }
